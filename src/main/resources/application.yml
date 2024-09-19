@@ -1,0 +1,23 @@
+otp:
+  expirationTime: 60000
+  sendOtpLimit: 3
+# Spring Boot configuration
+spring:
+  # Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/otp
+    username: postgres
+    password: 1111
+  # JPA properties
+  jpa:
+    show_sql: true
+    hibernate:
+      ddl-auto: update
+# Port
+server:
+  port: 8080
+# Swagger
+springdoc:
+  swagger-ui:
+    path: /swagger-ui
